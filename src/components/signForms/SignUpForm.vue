@@ -7,6 +7,12 @@
       >
         неправильные даные
       </div>
+      <div
+          class="error"
+          v-if="authError"
+      >
+        {{ errorText }}
+      </div>
       <div class="form-group">
         <label for="">Фамилия, Имя, Отчество:</label>
         <input

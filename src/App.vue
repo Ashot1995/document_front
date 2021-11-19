@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div class="main">
-    <mobile-control-sidebar
-      @toggleSidebar="showSidebar"
-    />
-    <Sidebar
-      v-if="this.$route.path !== '/signup'"
-    />
-    <router-view/>
+      <mobile-control-sidebar
+          @toggleSidebar="showSidebar"
+      />
+      <Sidebar
+          v-if="this.$route.path !== '/signup'"
+      />
+      <router-view/>
 
       <popup
           :show.sync="$store.state.PopupModule.dialogVisibleShow"
@@ -48,7 +48,16 @@ import PointRemove from "./components/popups/PointRemove";
 
 export default {
   name: "app",
-  components: {MobileControlSidebar, Sidebar, AccessPopup, SpecifyMailPopup, WarningPopup, Popup, FileRemove, PointRemove},
+  components: {
+    MobileControlSidebar,
+    Sidebar,
+    AccessPopup,
+    SpecifyMailPopup,
+    WarningPopup,
+    Popup,
+    FileRemove,
+    PointRemove
+  },
   methods: {
     showSidebar() {
       document.querySelector('aside').classList.toggle('aside-show')
@@ -71,31 +80,41 @@ export default {
   font-family: var(--ff_regular);
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
 main {
   background-color: var(--main_bg_content);
   min-height: 100vh;
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+
   article {
     width: 100%;
     margin-left: 300px;
+
     .content {
       min-height: 100vh;
       max-width: 880px;
       width: 100%;
       margin: 0 auto;
       padding: 15px 0;
-      box-sizing:border-box;
+      box-sizing: border-box;
     }
+
     .content-account {
       display: flex;
-      align-items:center;
+      align-items: center;
       justify-content: center;
     }
   }
+
   .article-hide {
     display: none !important;
   }

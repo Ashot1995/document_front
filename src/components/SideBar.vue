@@ -92,7 +92,7 @@ export default {
   methods: {
     ...mapActions(['logoutUserAction']),
     logout() {
-      this.logoutUserAction({token: this.$store.state.Auth.token}).then((res) => {
+      this.logoutUserAction({token: this.$store.state.ClientModule.token}).then((res) => {
         this.$store.state.isAuth = true;
         const allCookies = document.cookie.split(';')
         for (let i = 0; i < allCookies.length; i++) {
