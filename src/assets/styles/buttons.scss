@@ -1,0 +1,56 @@
+.btn-orange {
+  cursor: pointer;
+  background-color: var(--btn_orange);
+  color: var(--white);
+  border-radius: 20px;
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    background-color: var(--btn_orange-hover);
+  }
+}
+
+.btn-premium {
+  cursor: pointer;
+  background-color: var(--btn_premium);
+  color: var(--white);
+  border-radius: 20px;
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    background-color: var(--btn_premium-hover);
+  }
+}
+
+.btn-purple {
+  cursor: pointer;
+  background-color: var(--btn_purple);
+  color: var(--white);
+  border-radius: 20px;
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    background-color: var(--btn_purple-hover);
+  }
+}
+
+.btn-edit {
+  cursor: pointer;
+  background-color: var(--btn_edit);
+  color: var(--white);
+  border-radius: 20px;
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    background-color: var(--btn_edit_hover);
+  }
+}
+
+.btn-edit_border {
+  cursor: pointer;
+  border: 2px solid var(--btn_edit_border);
+  color: var(--btn_edit_border);
+  border-radius: 20px;
+  background-color: var(--white);
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    border: 2px solid var(--btn_edit_border-hover);
+    color: var(--btn_edit_border-hover);
+  }
+}

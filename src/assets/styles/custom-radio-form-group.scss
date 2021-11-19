@@ -1,0 +1,68 @@
+.custom-radio-form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  label {
+    color: var(--text_gray_color);
+    opacity:1;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: var(--ff_regular);
+  }
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-color: transparent;
+    border: 1px solid var(--main_gray_color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover {
+    opacity: 1;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    //background-color: var(--active_checkbox);
+    background-color: transparent !important;
+    content: url("./assets/icons/checkbox-arrow.svg");
+    color: var(--active_checkbox);
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    //border-color: var(--focus_checkbox);
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+
+    content: url("./assets/icons/checkbox-arrow.svg");
+    color: var(--active_checkbox);
+    //background-color: var(--checked_checkbox);
+    background-color: transparent !important;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--main_gray_color);
+  }
+  .custom-radio:checked+label {
+    opacity: 1;
+  }
+}

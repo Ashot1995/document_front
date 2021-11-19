@@ -1,0 +1,17 @@
+[
+  {"id": 1,
+    "Authors": [
+      {"id": 1, "name": "Тестовый автор", "name_en": "Test author"}
+    ],
+    "Company": [
+      {"id": 1, "name": "Лукойл", "name_en": "Lukoil"}
+    ],
+    "Participants": [
+      {"id": 1, "name": "Иванов Иван Иванович", "name_en": "Ivanov Ivan Ivanovich"}
+    ],
+    "AdditionalInformation": "Дополнительная информация",
+    "Type": 1,
+    "logoType": "google_drive",
+    "stateId": 2
+  }
+]

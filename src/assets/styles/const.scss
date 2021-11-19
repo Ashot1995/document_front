@@ -1,0 +1,90 @@
+:root {
+
+  // main colors app
+
+  --aside_main_color: #0C1841;
+  --main_bg_content: #E5E5E5;
+  --bg_notification: #FFFACA;
+  --main_gray_color: #8D8D8D;
+
+
+  // region main buttons
+  --btn_orange: rgba(255, 153, 0, 0.9);
+  --btn_orange-hover: rgba(255, 153, 0, 1);
+
+  --btn_premium: rgba(12, 24, 65, 0.9);
+  --btn_premium-hover: rgba(12, 24, 65, 1);
+
+  --btn_purple: rgba(78, 60, 188, 0.9);
+  --btn_purple-hover: rgba(78, 60, 188, 1);
+
+  --btn_edit: rgba(141, 141, 141, 0.9);
+  --btn_edit_hover: rgba(141, 141, 141, 1);
+
+  --btn_edit_border: rgba(141, 141, 141, 0.6);
+  --btn_edit_border-hover: rgba(141, 141, 141, 1);
+
+
+
+  // region font-family
+
+  --ff_bold: 'bold';
+  --ff_light: 'light';
+  --ff_regular: 'regular';
+  --ff_medium: 'medium';
+
+
+  // region control button (play, pause, close)
+
+  --control__icon: rgba(141, 141, 141, 0.6);
+  --control__icon-hover: rgba(141, 141, 141, 1);
+
+  --control__play: #8CD6AD;
+  --control__pause: #95BBF2;
+  --control__close: #DC143C;
+
+  --onion: rgba(255, 153, 0, 0.9);
+  --onion-hover: rgba(255, 153, 0, 1);
+
+
+  // region other colors
+
+  --text_gray_color: #8D8D8D;
+
+  --white:#ffffff;
+  --black:#000000;
+  --light_white: #F5F5F5;
+  --gray: #555555;
+
+  // element show-more repositories
+
+  --show_more-border:#BDBDBD;
+  --show_more-color:#A6A6A6;
+
+  --text_add: rgba(78, 60, 188, 0.9);
+  --text_add-hover: rgba(78, 60, 188, 1);
+
+
+  // region radio checkbox
+
+  --active_checkbox: rgba(255, 153, 0, 1);
+  --focus_checkbox: rgba(255, 153, 0, 0.9);
+  --checked_checkbox: rgba(255, 153, 0, 0.9);
+
+
+  // region block auto add new file
+
+  --border_block:rgba(141, 141, 141, 0.6);
+  --border_block-hover:rgba(141, 141, 141, 1);
+
+
+  // region object table
+
+  --table_border: #AEAEAE;
+
+  // region control file
+
+  --control-point: rgba(141, 141, 141, 0.6);
+  --control-point-hover: rgba(141, 141, 141, 1);
+
+}

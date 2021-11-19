@@ -1,0 +1,84 @@
+.item-list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.item-list-enter-active,
+.item-list-leave-active {
+  transition: all 0.4s ease;
+}
+.item-list-enter-from,
+.item-list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.point-list-item {
+  max-height: 0;
+  overflow: hidden;
+}
+.point-list-enter-active,
+.point-list-leave-active {
+  animation: point-in .5s linear;
+}
+.point-list-enter-from,
+.point-list-leave-to {
+  animation: point-out .5s linear;
+}
+@keyframes point-in {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 100vmin;
+  }
+}
+@keyframes point-out {
+  0% {
+    max-height: 100vmin;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+
+
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.files-enter-active {
+  animation: point-in .5s;
+}
+.files-leave-active {
+  animation: point-out .5s;
+}
+
+
+.slide-fade-enter-active {
+  transition: all .4s ease;
+}
+.slide-fade-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active до версии 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
