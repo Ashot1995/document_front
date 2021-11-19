@@ -14,8 +14,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     isAuth:'',
-    // recaptcha: '6Le4YDwdAAAAAGSUmALYIQvUrpQFRgI1_HOxokRU'
-    recaptcha: '6Lfriz4dAAAAABwr3xyny9Fu12qZAqDOjbonDIlz'
+    recaptcha: '6Le4YDwdAAAAAGSUmALYIQvUrpQFRgI1_HOxokRU'
+    // recaptcha: '6Lfriz4dAAAAABwr3xyny9Fu12qZAqDOjbonDIlz'
   },
   mutations: {
   },
